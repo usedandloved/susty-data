@@ -1,4 +1,5 @@
 {
+  "name": "susty-data-devcontainer",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
   "features": {
     "ghcr.io/devcontainers-community/features/deno:1": {}
