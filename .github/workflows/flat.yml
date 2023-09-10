@@ -26,3 +26,4 @@ jobs:
         with:
           http_url: https://www.ifixit.com/smartphone-repairability # The data to fetch every 5 minutes
           downloaded_filename: smartphone-repairability.html # The http_url gets saved and renamed in our repository as smartphone-repairability.html
+          postprocess: postprocess.ts # A postprocessing javascript or typescript file written in Deno
