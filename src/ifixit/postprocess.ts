@@ -48,8 +48,11 @@ const dataArray = Array.from(devices).map((device) => {
 });
 
 // Step 4. Write a new JSON file with our data
-const newFilename = filename.replace(".html", ".jsonl");
-await writeTXT(newFilename, dataArray.map((l) => JSON.stringify(l)).join("\n")); // create a new JSON file with just the Bitcoin price
+const newFilename = filename.replace(".html", ".json");
+await writeTXT(
+  newFilename,
+  `[\n${dataArray.map((l) => JSON.stringify(l)).join(",\n")}\n]`,
+); // create a new JSON file in a format that's easy to diff
 
 // Step 5: Optionally delete the original file, use a !== here because the default should be to delete the file
 if (Deno.args[1] !== "skipRemove") {
