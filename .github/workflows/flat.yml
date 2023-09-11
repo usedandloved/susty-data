@@ -27,17 +27,17 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: https://www.ifixit.com/smartphone-repairability?sort=date # The data to fetch every 5 minutes
-          downloaded_filename: ifixit/smartphone-repairability.html # The http_url gets saved and renamed in our repository as ifixit/smartphone-repairability.html
-          postprocess: ifixit/postprocess.ts # A postprocessing javascript or typescript file written in Deno
+          downloaded_filename: data/ifixit/smartphone-repairability.html # The http_url gets saved and renamed in our repository as ifixit/smartphone-repairability.html
+          postprocess: src/ifixit/postprocess.ts # A postprocessing javascript or typescript file written in Deno
       - name: Fetch data 
         uses: githubocto/flat@v3
         with:
           http_url: https://www.ifixit.com/laptop-repairability?sort=date
-          downloaded_filename: ifixit/laptop-repairability.html
-          postprocess: ifixit/postprocess.ts
+          downloaded_filename: data/ifixit/laptop-repairability.html
+          postprocess: src/ifixit/postprocess.ts
       - name: Fetch data 
         uses: githubocto/flat@v3
         with:
           http_url: https://www.ifixit.com/tablet-repairability?sort=date
-          downloaded_filename: ifixit/tablet-repairability.html
-          postprocess: ifixit/postprocess.ts
+          downloaded_filename: data/ifixit/tablet-repairability.html
+          postprocess: src/ifixit/postprocess.ts

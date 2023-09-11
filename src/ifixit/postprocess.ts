@@ -9,7 +9,7 @@ import {
   removeFile,
   writeTXT,
 } from "https://deno.land/x/flat@0.0.14/mod.ts";
-import { ensureAbsoluteUrl } from "./lib/utils.ts";
+import { ensureAbsoluteUrl } from "../lib/utils.ts";
 
 const rootUrl = "https://www.ifixit.com";
 
