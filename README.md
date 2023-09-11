@@ -3,10 +3,10 @@
 So far, this repository contains data from:
 
 - ifixit repairability score for: smartphones, tablets and laptops
+- endoflife.date for iPhones and iOS
 
 ## TODO
 
-- Add data from https://endoflife.date, they have an api
 - Add data from
   https://www.indicereparabilite.fr/appareils/multimedia/smartphone/
 
