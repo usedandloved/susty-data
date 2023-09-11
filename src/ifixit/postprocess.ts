@@ -33,17 +33,17 @@ const dataArray = Array.from(devices).map((device) => {
   )?.value;
 
   return {
-    link: href ? ensureAbsoluteUrl(href, rootUrl) : undefined,
     // Device name, with multiple spaces removed
     name: el.querySelector(".device-name")?.textContent.trim().replace(
       /\s\s+/g,
       " ",
     ),
+    score: el.querySelector(".device-score")?.textContent.trim(),
     relaeseDateTime: el.querySelector("[datetime]")?.attributes.getNamedItem(
       "datetime",
     )
       ?.value,
-    score: el.querySelector(".device-score")?.textContent.trim(),
+    link: href ? ensureAbsoluteUrl(href, rootUrl) : undefined,
   };
 });
 
