@@ -6,7 +6,9 @@ on:
       - .github/workflows/flat.yml # Only run a new workflow every time this file (flat.yaml) file changes
   workflow_dispatch: # Required even though this is currently empty
   schedule:
-    - cron: '*/5 * * * *' # Run this workflow every 5 minutes
+    # Run this workflow: At 8:08am on every 5th day from 1st through 31st
+    # https://cron.help/#8_8_1/5_*_*
+    - cron: '8 8 1/5 * *' 
 
 jobs:
   scheduled:
@@ -24,6 +26,6 @@ jobs:
       - name: Fetch data 
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.ifixit.com/smartphone-repairability # The data to fetch every 5 minutes
-          downloaded_filename: smartphone-repairability.html # The http_url gets saved and renamed in our repository as smartphone-repairability.html
-          postprocess: postprocess.ts # A postprocessing javascript or typescript file written in Deno
+          http_url: https://www.ifixit.com/smartphone-repairability?sort=date # The data to fetch every 5 minutes
+          downloaded_filename: ifixit/smartphone-repairability.html # The http_url gets saved and renamed in our repository as ifixit/smartphone-repairability.html
+          postprocess: ifixit/postprocess.ts # A postprocessing javascript or typescript file written in Deno

@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "debug": "deno run -A --watch='ifixit/*.ts' --allow-read='./test/*.html' --allow-write='./test/*.jsonl'  ifixit/postprocess.ts ./test/ifixit.html skipRemove"
+  }
+}

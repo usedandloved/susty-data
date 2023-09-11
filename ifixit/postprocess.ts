@@ -11,6 +11,12 @@ import {
   writeTXT,
 } from "https://deno.land/x/flat@0.0.14/mod.ts";
 
+const rootUrl = "https://www.ifixit.com";
+
+const ensureAbsoluteUrl = (url: string, root: string) => {
+  return url.startsWith("http") ? url : `${root}${url}`;
+};
+
 // Step 1: Read the downloaded_filename JSON
 const filename = Deno.args[0]; // Same name as downloaded_filename `const filename = 'btc-price.json';`
 const text = await readTXT(filename);
@@ -22,14 +28,14 @@ assert(document);
 const devices = document.querySelectorAll("#content .table.parent");
 assert(devices?.length);
 
-// console.log(devices);
-
 // Loop over the devices and get the data you want
 
-const dataArray = Array.from(devices).map((device, i) => {
-  // if(i) return;
-
+const dataArray = Array.from(devices).map((device) => {
   const el = device as HTMLDocument;
+
+  const href = el.querySelector(".image-container a")?.attributes.getNamedItem(
+    "href",
+  )?.value;
 
   return {
     // Rempove multiple spaces
@@ -38,22 +44,21 @@ const dataArray = Array.from(devices).map((device, i) => {
       " ",
     ),
     score: el?.querySelector(".device-score")?.textContent.trim(),
-    link: el.querySelector(".image-container a")?.attributes.getNamedItem(
-      "href",
-    )?.value,
+    link: href ? ensureAbsoluteUrl(href, rootUrl) : undefined,
+    relaeseDateTime: el.querySelector("[datetime]")?.attributes.getNamedItem(
+      "datetime",
+    )
+      ?.value,
   };
 });
-
-console.log(dataArray);
 
 // Step 4. Write a new JSON file with our filtered data
 const newFilename = filename.replace(".html", ".jsonl");
 
-// Save in jsonl format for easier diffing
-// Need to order for easy diffing too
-
 await writeTXT(newFilename, dataArray.map((l) => JSON.stringify(l)).join("\n")); // create a new JSON file with just the Bitcoin price
 console.log("Wrote a post process file");
 
-// Optionally delete the original file
-// await removeFile('./btc-price.json') // equivalent to removeFile('btc-price.json')
+// Optionally delete the original file, use a !== here because the default should be to delete the file
+if (Deno.args[1] !== "skipRemove") {
+  await removeFile(filename);
+}
