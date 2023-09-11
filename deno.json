@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "debug": "deno run -A --watch='src/*.ts' --allow-read='./test/*.html' --allow-write='./test/*.json'  src/ifixit/postprocess.ts ./test/ifixit.html skipRemove"
+    "debug": "deno run -A --watch='src/*.ts' --allow-read='./test/*.html' --allow-write='./test/*.json'  src/ifixit/postprocess.ts ./test/ifixit.html skipRemove",
+    "debug2": "deno run -A --watch='src/*.ts' --allow-read='./test/*.html' --allow-write='./test/*.json'  src/endoflife.date/postprocess.ts ./test/endoflife.date.min.json skipRemove"
   }
 }

@@ -1,0 +1,27 @@
+name: endoflife.date
+
+on:
+  push:
+    paths:
+      - .github/workflows/flat.endoflife.date.yml
+  workflow_dispatch:
+  schedule:
+    # Run this workflow: At 9:09am on every 5th day from 1st through 31st
+    # https://cron.help/#8_8_1/5_*_*
+    - cron: '9 89 1/5 * *' 
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Setup deno
+        uses: denoland/setup-deno@main
+        with:
+          deno-version: v1.x
+      - name: Fetch data 
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://endoflife.date/api/iphone.json
+          downloaded_filename: data/endoflife.date/iphone.min.json
