@@ -25,3 +25,4 @@ jobs:
         with:
           http_url: https://endoflife.date/api/iphone.json
           downloaded_filename: data/endoflife.date/iphone.min.json
+          postprocess: src/endoflife.date/postprocess.ts
