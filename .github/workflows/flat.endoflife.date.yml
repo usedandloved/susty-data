@@ -26,3 +26,9 @@ jobs:
           http_url: https://endoflife.date/api/iphone.json
           downloaded_filename: data/endoflife.date/iphone.min.json
           postprocess: src/endoflife.date/postprocess.ts
+      - name: Fetch data 
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://endoflife.date/api/ios.json
+          downloaded_filename: data/endoflife.date/ios.min.json
+          postprocess: src/endoflife.date/postprocess.ts
