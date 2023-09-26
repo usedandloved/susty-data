@@ -21,28 +21,30 @@ assert(text);
 // Step 2: Parse the html source into a document, so we can query it for the data we want
 const document = new DOMParser().parseFromString(text, "text/html");
 assert(document);
-const devices = document.querySelectorAll("#content .table.parent");
+const devices = document.querySelectorAll(
+  "#wpBody .wp-block-columns.has-background",
+);
 assert(devices?.length);
 
 // Step 3: Loop over the devices and get the data we want
 const dataArray = Array.from(devices).map((device) => {
   const el = device as HTMLDocument;
 
-  const href = el.querySelector(".image-container a")?.attributes.getNamedItem(
+  const href = el.querySelector("strong a")?.attributes.getNamedItem(
     "href",
   )?.value;
 
   return {
     // Device name, with multiple spaces removed
-    name: el.querySelector(".device-name")?.textContent.trim().replace(
+    name: el.querySelector("h1")?.textContent.trim().replace(
       /\s\s+/g,
       " ",
     ),
-    score: el.querySelector(".device-score")?.textContent.trim(),
-    relaeseDateTime: el.querySelector("[datetime]")?.attributes.getNamedItem(
-      "datetime",
-    )
-      ?.value,
+    score: el.querySelector("img[alt$='Repairability Score']")?.attributes
+      .getNamedItem(
+        "alt",
+      )?.value
+      .trim().split(" ")[0],
     link: href ? ensureAbsoluteUrl(href, rootUrl) : undefined,
   };
 });
