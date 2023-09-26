@@ -6,7 +6,7 @@ on:
       - .github/workflows/flat.ifixit.yml # Only run a new workflow every time this file (flat.yaml) file changes
   workflow_dispatch: # Required even though this is currently empty
   schedule:
-    # Run this workflow: At 8:08am on every 5th day from 1st through 31st
+    # Run this workflow: At 8:08am on every 5th day from 1st through 31st 
     # https://cron.help/#8_8_1/5_*_*
     - cron: '8 8 1/5 * *' 
 
