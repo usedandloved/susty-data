@@ -11,12 +11,12 @@
    <link rel="preconnect" href="https://guide-images.cdn.ifixit.com" crossorigin>
 
    <link rel="preload"
-      href="https://assets.cdn.ifixit.com/Assets/translations/en-translations.js?7729"
+      href="https://assets.cdn.ifixit.com/Assets/translations/en-translations.js?7762"
       as="script"
       importance="high"
          >
    <link rel="preload"
-      href="https://assets.cdn.ifixit.com/Assets/scripts/runtime.js.00ab5d311aa02cc28ef4.js"
+      href="https://assets.cdn.ifixit.com/Assets/scripts/runtime.js.a96b7aa2414433643e78.js"
       as="script"
       importance="high"
          >
@@ -27,13 +27,7 @@
          >
 
       
-      <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-59NVBFN');</script>
-<!-- End Google Tag Manager -->
+      
       <title>Smartphone Repairability Scores - iFixit</title>
 
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -45,7 +39,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                <link id="canonical-link" rel="canonical" href="https://www.ifixit.com/repairability/smartphone-scores" />
       
-                  <link rel="alternate" hreflang="fr" href="https://fr.ifixit.com/indices-smartphone" />
+                  <link rel="alternate" hreflang="ja" href="https://jp.ifixit.com/%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3-%E3%82%B9%E3%82%B3%E3%82%A2" />
+      <link rel="alternate" hreflang="fr" href="https://fr.ifixit.com/indices-smartphone" />
       <link rel="alternate" hreflang="de" href="https://de.ifixit.com/smartphone-bewertungen" />
       <link rel="alternate" hreflang="es" href="https://es.ifixit.com/calificacion-de-smartphones" />
       <link rel="alternate" hreflang="en" href="https://www.ifixit.com/smartphone-scores" />
@@ -56,8 +51,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                                                      <meta property="og:title" content="Smartphone Repairability Scores" />
                                                                      <meta property="og:image" content="https://valkyrie.cdn.ifixit.com/media/2023/09/15130321/Repairability-Index-LP_Featured-Image.jpg" />
                                                                      <meta property="og:description" content="To find out, our engineers tear down the latest smartphones and score their repairability from zero (unrepairable) to ten (easiest to repair) so you can pick a…" />
-                                                                     <meta property="og:published_time" content="2023-09-21T07:54:35-07:00" />
-                                                                     <meta property="og:modified_time" content="2023-09-21T07:54:35-07:00" />
+                                                                     <meta property="og:published_time" content="2023-09-26T08:03:02-07:00" />
+                                                                     <meta property="og:modified_time" content="2023-09-26T08:03:02-07:00" />
                                                                      <meta property="og:author" content="Johanna Woetzel" />
                                                                      <meta property="og:url" content="https://www.ifixit.com/repairability/smartphone-scores" />
                                                                      <meta property="og:site_name" content="iFixit" />
@@ -351,7 +346,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                            var createOptions = {};
                      createOptions = {'legacyCookieDomain': 'ifixit.com'};
             
-                           ga('create', 'UA-30506-1', 'auto', 'ifixit', createOptions);
+                           createOptions.storage = 'none';
+               createOptions.storeGac = false;
+
+               var xhr = new XMLHttpRequest();
+               xhr.open('GET', '/api/2.0/clientid');
+               xhr.onload = function() {
+                  if (this.status == 200) {
+                     createOptions.clientId = JSON.parse(this.responseText);
+                     ga('create', 'UA-30506-1', 'auto', 'ifixit', createOptions);
+                  }
+               };
+               xhr.send();
                      
          ga('ifixit.set', 'anonymizeIp', true);
                
@@ -379,7 +385,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script>
    var _paq = window._paq = window._paq || [];
    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-   var _matomoActions = [["trackPageView"],["enableLinkTracking"]];
+   var _matomoActions = [["disableCookies"],["trackPageView"],["enableLinkTracking"]];
    _matomoActions.forEach(function(action) {
       _paq.push(action);
    });
@@ -424,10 +430,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="msapplication-TileImage" content="https://assets.cdn.ifixit.com/static/icons/ifixit/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
    
-      <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/runtime.js.00ab5d311aa02cc28ef4.js"></script>
+      <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/runtime.js.a96b7aa2414433643e78.js"></script>
 <script defer src="/v3/polyfill.min.js?features=default,Object.entries,Object.fromEntries,Number.isInteger,IntersectionObserver,NodeList.prototype.forEach,WeakSet,WeakMap,fetch,Array.prototype.flatMap,Array.prototype.flat,Promise.prototype.finally,IntersectionObserver,String.prototype.matchAll"></script>
 
-   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/translations/en-translations.js?7729"></script>
+   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/translations/en-translations.js?7762"></script>
 
 
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/9978.03ad29822430a9e593ab.js"></script>
@@ -452,17 +458,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/5246.0dc689f415e817e4d76d.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/5242.cf2d9ab5bdef761e6002.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/1774.aec722fd7e5d4d6806cc.js"></script>
-   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/guidepage.js.fae605e6662ab67853df.js"></script>
+   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/guidepage.js.97ea5e769359282b6733.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/4801.0836296e4e9b8d59e422.js"></script>
-   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/footer.js.151e40cf62c9816ffcc3.js"></script>
+   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/footer.js.5d7ffda9711fbd8f938f.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/9585.176fd77f6f432acf284d.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/8130.3bb8705ca74ebc626f35.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/1977.12e4ed2c59f56a397934.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/4960.8169ccd20c80e11d9496.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/5375.d542856697b098d13709.js"></script>
-   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/2397.0cff5fe4dd50e84d98a5.js"></script>
+   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/2397.f413c18b9ab4c60951c0.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/2324.1a7693a83b9a57de86a8.js"></script>
-   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/ifixit-header-footer.js.db9c52e0dc62ff170a66.js"></script>
+   <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/ifixit-header-footer.js.7aea948ccfc2ed9d04ef.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/5401.088a05ef2c551fcc43e9.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/4402.e5bb0f9fd66983132529.js"></script>
    <script defer type="text/javascript" src="https://assets.cdn.ifixit.com/Assets/scripts/8500.e6819e1441d044ade230.js"></script>
@@ -478,9 +484,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       
       
-   <script type="text/javascript">
-      window.REPAIR_ORG_OPTIONS = {"alwaysShowWidget":false,"cookieExpirationDays":30}   </script>
-   <script async src="https://assets.repair.org/widget.js"></script>
       <style id="criticalCss">
          @media screen and (max-width: 400px) {
    @-ms-viewport {
@@ -1192,10 +1195,7 @@ html {
    <div class="close"><i class="fa fa-times " ></i></div>
    </div>
                
-      <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59NVBFN"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+      
       
       <div id="background">
       <div class="react-component component-Announcements"
@@ -1211,7 +1211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="react-component component-Header"
       data-reactroot
    data-name="Header"
-   data-props="{&quot;isOnCart&quot;:false,&quot;links&quot;:[{&quot;title&quot;:&quot;Fix Your Stuff&quot;,&quot;url&quot;:&quot;\/Guide&quot;,&quot;sublinks&quot;:[{&quot;title&quot;:&quot;Repair Guides&quot;,&quot;description&quot;:&quot;Learn how to fix just about anything with our step-by-step guides.&quot;,&quot;url&quot;:&quot;\/Guide&quot;},{&quot;title&quot;:&quot;Answers Forum&quot;,&quot;description&quot;:&quot;Share solutions and get help from a friend.&quot;,&quot;url&quot;:&quot;\/Answers&quot;},{&quot;title&quot;:&quot;Teardowns&quot;,&quot;description&quot;:&quot;Get a sneak peek inside the latest gadgets.&quot;,&quot;url&quot;:&quot;\/Teardown&quot;},{&quot;title&quot;:&quot;Blog&quot;,&quot;description&quot;:&quot;Your destination for tech repair news.&quot;,&quot;url&quot;:&quot;\/News&quot;}]},{&quot;title&quot;:&quot;Join the Community&quot;,&quot;url&quot;:&quot;\/Community&quot;,&quot;sublinks&quot;:[{&quot;title&quot;:&quot;Get Involved&quot;,&quot;description&quot;:&quot;Help teach people to make their stuff work again.&quot;,&quot;url&quot;:&quot;\/Community&quot;},{&quot;title&quot;:&quot;Right to Repair&quot;,&quot;description&quot;:&quot;Learn about the Right to Repair movement and how to be an advocate.&quot;,&quot;url&quot;:&quot;\/Right-to-Repair&quot;},{&quot;title&quot;:&quot;Repairability&quot;,&quot;description&quot;:&quot;Learn why fixable products make sense.&quot;,&quot;url&quot;:&quot;\/repairability&quot;},{&quot;title&quot;:&quot;Our Manifesto&quot;,&quot;description&quot;:&quot;Join the repair revolution!&quot;,&quot;url&quot;:&quot;\/Manifesto&quot;}]},{&quot;title&quot;:&quot;Store&quot;,&quot;url&quot;:&quot;https:\/\/www.ifixit.com\/Store&quot;,&quot;hasStoreDropdown&quot;:true,&quot;sublinks&quot;:[{&quot;title&quot;:&quot;Featured&quot;,&quot;description&quot;:&quot;Quality parts and tools backed by our lifetime guarantee.&quot;,&quot;url&quot;:&quot;https:\/\/www.ifixit.com\/Store&quot;},{&quot;title&quot;:&quot;Tools&quot;,&quot;description&quot;:&quot;Shop our wide selection of precision tools.&quot;,&quot;url&quot;:&quot;https:\/\/www.ifixit.com\/Tools&quot;},{&quot;title&quot;:&quot;Parts&quot;,&quot;description&quot;:&quot;Shop parts backed by our quality guarantee.&quot;,&quot;url&quot;:&quot;https:\/\/www.ifixit.com\/Parts&quot;},{&quot;title&quot;:&quot;Fix Kits&quot;,&quot;description&quot;:&quot;Fix it the easy way with our all-in-one repair kits.&quot;,&quot;url&quot;:&quot;\/Kits&quot;}]}],&quot;stores&quot;:[{&quot;name&quot;:&quot;United States&quot;,&quot;storeCode&quot;:&quot;us&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;isDisplayStore&quot;:true},{&quot;name&quot;:&quot;Australia&quot;,&quot;storeCode&quot;:&quot;au&quot;,&quot;currency&quot;:&quot;AUD&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;Canada&quot;,&quot;storeCode&quot;:&quot;ca&quot;,&quot;currency&quot;:&quot;CAD&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;Germany&quot;,&quot;storeCode&quot;:&quot;de&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;France&quot;,&quot;storeCode&quot;:&quot;fr&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;United Kingdom&quot;,&quot;storeCode&quot;:&quot;uk&quot;,&quot;currency&quot;:&quot;GBP&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;Europe&quot;,&quot;storeCode&quot;:&quot;eu&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;isDisplayStore&quot;:false}],&quot;dropdowns&quot;:{&quot;miniCart&quot;:{&quot;products&quot;:[]},&quot;languageDropdown&quot;:{&quot;languages&quot;:[{&quot;name&quot;:&quot;German&quot;,&quot;autoglottonym&quot;:&quot;Deutsch&quot;,&quot;currency&quot;:&quot;DEM&quot;,&quot;locale&quot;:&quot;de_DE&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/ba\/Flag_of_Germany.svg\/16px-Flag_of_Germany.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/ba\/Flag_of_Germany.svg\/32px-Flag_of_Germany.svg.png&quot;,&quot;isoCode&quot;:&quot;DE&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;English&quot;,&quot;autoglottonym&quot;:&quot;English&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a4\/Flag_of_the_United_States.svg\/16px-Flag_of_the_United_States.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a4\/Flag_of_the_United_States.svg\/32px-Flag_of_the_United_States.svg.png&quot;,&quot;isSelected&quot;:true,&quot;isoCode&quot;:&quot;EN&quot;},{&quot;name&quot;:&quot;Spanish&quot;,&quot;autoglottonym&quot;:&quot;Espa\u00f1ol&quot;,&quot;currency&quot;:&quot;MXN&quot;,&quot;locale&quot;:&quot;es_MX&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fc\/Flag_of_Mexico.svg\/16px-Flag_of_Mexico.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fc\/Flag_of_Mexico.svg\/32px-Flag_of_Mexico.svg.png&quot;,&quot;isoCode&quot;:&quot;ES&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;French&quot;,&quot;autoglottonym&quot;:&quot;Fran\u00e7ais&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;locale&quot;:&quot;fr_FR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Flag_of_France.svg\/16px-Flag_of_France.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Flag_of_France.svg\/32px-Flag_of_France.svg.png&quot;,&quot;isoCode&quot;:&quot;FR&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Italian&quot;,&quot;autoglottonym&quot;:&quot;Italiano&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;locale&quot;:&quot;it_IT&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/03\/Flag_of_Italy.svg\/16px-Flag_of_Italy.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/03\/Flag_of_Italy.svg\/32px-Flag_of_Italy.svg.png&quot;,&quot;isoCode&quot;:&quot;IT&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Dutch&quot;,&quot;autoglottonym&quot;:&quot;Nederlands&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;locale&quot;:&quot;nl_NL&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/20\/Flag_of_the_Netherlands.svg\/16px-Flag_of_the_Netherlands.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/20\/Flag_of_the_Netherlands.svg\/32px-Flag_of_the_Netherlands.svg.png&quot;,&quot;isoCode&quot;:&quot;NL&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Portuguese&quot;,&quot;autoglottonym&quot;:&quot;Portugu\u00eas&quot;,&quot;currency&quot;:&quot;PP&quot;,&quot;locale&quot;:&quot;pt_BR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/05\/Flag_of_Brazil.svg\/16px-Flag_of_Brazil.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/05\/Flag_of_Brazil.svg\/32px-Flag_of_Brazil.svg.png&quot;,&quot;isoCode&quot;:&quot;PT&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Russian&quot;,&quot;autoglottonym&quot;:&quot;P\u0443\u0441\u0441\u043a\u0438\u0439&quot;,&quot;currency&quot;:&quot;RUR&quot;,&quot;locale&quot;:&quot;ru_RU&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f3\/Flag_of_Russia.svg\/16px-Flag_of_Russia.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f3\/Flag_of_Russia.svg\/32px-Flag_of_Russia.svg.png&quot;,&quot;isoCode&quot;:&quot;RU&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Turkish&quot;,&quot;autoglottonym&quot;:&quot;T\u00fcrk\u00e7e&quot;,&quot;currency&quot;:&quot;TRY&quot;,&quot;locale&quot;:&quot;tr_TR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/b4\/Flag_of_Turkey.svg\/16px-Flag_of_Turkey.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/b4\/Flag_of_Turkey.svg\/32px-Flag_of_Turkey.svg.png&quot;,&quot;isoCode&quot;:&quot;TR&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Chinese&quot;,&quot;autoglottonym&quot;:&quot;\u4e2d\u6587&quot;,&quot;currency&quot;:&quot;HKD&quot;,&quot;locale&quot;:&quot;zh_CN&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fa\/Flag_of_the_People%27s_Republic_of_China.svg\/16px-Flag_of_the_People%27s_Republic_of_China.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fa\/Flag_of_the_People%27s_Republic_of_China.svg\/32px-Flag_of_the_People%27s_Republic_of_China.svg.png&quot;,&quot;isoCode&quot;:&quot;ZH&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Japanese&quot;,&quot;autoglottonym&quot;:&quot;\u65e5\u672c\u8a9e&quot;,&quot;currency&quot;:&quot;JPY&quot;,&quot;locale&quot;:&quot;ja_JP&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/9e\/Flag_of_Japan.svg\/16px-Flag_of_Japan.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/9e\/Flag_of_Japan.svg\/32px-Flag_of_Japan.svg.png&quot;,&quot;isoCode&quot;:&quot;JP&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Korean&quot;,&quot;autoglottonym&quot;:&quot;\ud55c\uad6d\uc5b4&quot;,&quot;currency&quot;:&quot;KRW&quot;,&quot;locale&quot;:&quot;ko_KR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/09\/Flag_of_South_Korea.svg\/16px-Flag_of_South_Korea.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/09\/Flag_of_South_Korea.svg\/32px-Flag_of_South_Korea.svg.png&quot;,&quot;isoCode&quot;:&quot;KO&quot;,&quot;isSelected&quot;:false}],&quot;translationPreferencesUrl&quot;:&quot;\/api\/2.0\/user\/setLanguagePreferences&quot;},&quot;userInfo&quot;:null}}">
+   data-props="{&quot;isOnCart&quot;:false,&quot;links&quot;:[{&quot;title&quot;:&quot;Fix Your Stuff&quot;,&quot;url&quot;:&quot;\/Guide&quot;,&quot;sublinks&quot;:[{&quot;title&quot;:&quot;Repair Guides&quot;,&quot;description&quot;:&quot;Learn how to fix just about anything with our step-by-step guides.&quot;,&quot;url&quot;:&quot;\/Guide&quot;},{&quot;title&quot;:&quot;Answers Forum&quot;,&quot;description&quot;:&quot;Share solutions and get help from a friend.&quot;,&quot;url&quot;:&quot;\/Answers&quot;},{&quot;title&quot;:&quot;Teardowns&quot;,&quot;description&quot;:&quot;Get a sneak peek inside the latest gadgets.&quot;,&quot;url&quot;:&quot;\/Teardown&quot;},{&quot;title&quot;:&quot;Blog&quot;,&quot;description&quot;:&quot;Your destination for tech repair news.&quot;,&quot;url&quot;:&quot;\/News&quot;}]},{&quot;title&quot;:&quot;Join the Community&quot;,&quot;url&quot;:&quot;\/Community&quot;,&quot;sublinks&quot;:[{&quot;title&quot;:&quot;Get Involved&quot;,&quot;description&quot;:&quot;Help teach people to make their stuff work again.&quot;,&quot;url&quot;:&quot;\/Community&quot;},{&quot;title&quot;:&quot;Right to Repair&quot;,&quot;description&quot;:&quot;Learn about the Right to Repair movement and how to be an advocate.&quot;,&quot;url&quot;:&quot;\/Right-to-Repair&quot;},{&quot;title&quot;:&quot;Repairability&quot;,&quot;description&quot;:&quot;Learn why fixable products make sense.&quot;,&quot;url&quot;:&quot;\/repairability&quot;},{&quot;title&quot;:&quot;Our Manifesto&quot;,&quot;description&quot;:&quot;Join the repair revolution!&quot;,&quot;url&quot;:&quot;\/Manifesto&quot;}]},{&quot;title&quot;:&quot;Store&quot;,&quot;url&quot;:&quot;https:\/\/store.ifixit.de\/&quot;,&quot;hasStoreDropdown&quot;:true,&quot;sublinks&quot;:[{&quot;title&quot;:&quot;Featured&quot;,&quot;description&quot;:&quot;Quality parts and tools backed by our lifetime guarantee.&quot;,&quot;url&quot;:&quot;https:\/\/store.ifixit.de\/&quot;},{&quot;title&quot;:&quot;Tools&quot;,&quot;description&quot;:&quot;Shop our wide selection of precision tools.&quot;,&quot;url&quot;:&quot;https:\/\/store.ifixit.de\/collections\/tools&quot;},{&quot;title&quot;:&quot;Parts&quot;,&quot;description&quot;:&quot;Shop parts backed by our quality guarantee.&quot;,&quot;url&quot;:&quot;https:\/\/store.ifixit.de\/collections\/parts&quot;},{&quot;title&quot;:&quot;Fix Kits&quot;,&quot;description&quot;:&quot;Fix it the easy way with our all-in-one repair kits.&quot;,&quot;url&quot;:&quot;\/Kits&quot;}]}],&quot;stores&quot;:[{&quot;name&quot;:&quot;United States&quot;,&quot;storeCode&quot;:&quot;us&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;Australia&quot;,&quot;storeCode&quot;:&quot;au&quot;,&quot;currency&quot;:&quot;AUD&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;Canada&quot;,&quot;storeCode&quot;:&quot;ca&quot;,&quot;currency&quot;:&quot;CAD&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;Germany&quot;,&quot;storeCode&quot;:&quot;de&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;isDisplayStore&quot;:true},{&quot;name&quot;:&quot;France&quot;,&quot;storeCode&quot;:&quot;fr&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;United Kingdom&quot;,&quot;storeCode&quot;:&quot;uk&quot;,&quot;currency&quot;:&quot;GBP&quot;,&quot;isDisplayStore&quot;:false},{&quot;name&quot;:&quot;Europe&quot;,&quot;storeCode&quot;:&quot;eu&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;isDisplayStore&quot;:false}],&quot;dropdowns&quot;:{&quot;miniCart&quot;:{&quot;products&quot;:[]},&quot;languageDropdown&quot;:{&quot;languages&quot;:[{&quot;name&quot;:&quot;German&quot;,&quot;autoglottonym&quot;:&quot;Deutsch&quot;,&quot;currency&quot;:&quot;DEM&quot;,&quot;locale&quot;:&quot;de_DE&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/ba\/Flag_of_Germany.svg\/16px-Flag_of_Germany.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/ba\/Flag_of_Germany.svg\/32px-Flag_of_Germany.svg.png&quot;,&quot;isoCode&quot;:&quot;DE&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;English&quot;,&quot;autoglottonym&quot;:&quot;English&quot;,&quot;currency&quot;:&quot;USD&quot;,&quot;locale&quot;:&quot;en_US&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a4\/Flag_of_the_United_States.svg\/16px-Flag_of_the_United_States.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/a\/a4\/Flag_of_the_United_States.svg\/32px-Flag_of_the_United_States.svg.png&quot;,&quot;isSelected&quot;:true,&quot;isoCode&quot;:&quot;EN&quot;},{&quot;name&quot;:&quot;Spanish&quot;,&quot;autoglottonym&quot;:&quot;Espa\u00f1ol&quot;,&quot;currency&quot;:&quot;MXN&quot;,&quot;locale&quot;:&quot;es_MX&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fc\/Flag_of_Mexico.svg\/16px-Flag_of_Mexico.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fc\/Flag_of_Mexico.svg\/32px-Flag_of_Mexico.svg.png&quot;,&quot;isoCode&quot;:&quot;ES&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;French&quot;,&quot;autoglottonym&quot;:&quot;Fran\u00e7ais&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;locale&quot;:&quot;fr_FR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Flag_of_France.svg\/16px-Flag_of_France.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c3\/Flag_of_France.svg\/32px-Flag_of_France.svg.png&quot;,&quot;isoCode&quot;:&quot;FR&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Italian&quot;,&quot;autoglottonym&quot;:&quot;Italiano&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;locale&quot;:&quot;it_IT&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/03\/Flag_of_Italy.svg\/16px-Flag_of_Italy.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/03\/Flag_of_Italy.svg\/32px-Flag_of_Italy.svg.png&quot;,&quot;isoCode&quot;:&quot;IT&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Dutch&quot;,&quot;autoglottonym&quot;:&quot;Nederlands&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;locale&quot;:&quot;nl_NL&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/20\/Flag_of_the_Netherlands.svg\/16px-Flag_of_the_Netherlands.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/20\/Flag_of_the_Netherlands.svg\/32px-Flag_of_the_Netherlands.svg.png&quot;,&quot;isoCode&quot;:&quot;NL&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Portuguese&quot;,&quot;autoglottonym&quot;:&quot;Portugu\u00eas&quot;,&quot;currency&quot;:&quot;PP&quot;,&quot;locale&quot;:&quot;pt_BR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/05\/Flag_of_Brazil.svg\/16px-Flag_of_Brazil.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/05\/Flag_of_Brazil.svg\/32px-Flag_of_Brazil.svg.png&quot;,&quot;isoCode&quot;:&quot;PT&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Russian&quot;,&quot;autoglottonym&quot;:&quot;P\u0443\u0441\u0441\u043a\u0438\u0439&quot;,&quot;currency&quot;:&quot;RUR&quot;,&quot;locale&quot;:&quot;ru_RU&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f3\/Flag_of_Russia.svg\/16px-Flag_of_Russia.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f3\/Flag_of_Russia.svg\/32px-Flag_of_Russia.svg.png&quot;,&quot;isoCode&quot;:&quot;RU&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Turkish&quot;,&quot;autoglottonym&quot;:&quot;T\u00fcrk\u00e7e&quot;,&quot;currency&quot;:&quot;TRY&quot;,&quot;locale&quot;:&quot;tr_TR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/b4\/Flag_of_Turkey.svg\/16px-Flag_of_Turkey.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/b\/b4\/Flag_of_Turkey.svg\/32px-Flag_of_Turkey.svg.png&quot;,&quot;isoCode&quot;:&quot;TR&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Chinese&quot;,&quot;autoglottonym&quot;:&quot;\u4e2d\u6587&quot;,&quot;currency&quot;:&quot;HKD&quot;,&quot;locale&quot;:&quot;zh_CN&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fa\/Flag_of_the_People%27s_Republic_of_China.svg\/16px-Flag_of_the_People%27s_Republic_of_China.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/fa\/Flag_of_the_People%27s_Republic_of_China.svg\/32px-Flag_of_the_People%27s_Republic_of_China.svg.png&quot;,&quot;isoCode&quot;:&quot;ZH&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Japanese&quot;,&quot;autoglottonym&quot;:&quot;\u65e5\u672c\u8a9e&quot;,&quot;currency&quot;:&quot;JPY&quot;,&quot;locale&quot;:&quot;ja_JP&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/9e\/Flag_of_Japan.svg\/16px-Flag_of_Japan.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/9\/9e\/Flag_of_Japan.svg\/32px-Flag_of_Japan.svg.png&quot;,&quot;isoCode&quot;:&quot;JP&quot;,&quot;isSelected&quot;:false},{&quot;name&quot;:&quot;Korean&quot;,&quot;autoglottonym&quot;:&quot;\ud55c\uad6d\uc5b4&quot;,&quot;currency&quot;:&quot;KRW&quot;,&quot;locale&quot;:&quot;ko_KR&quot;,&quot;png16&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/09\/Flag_of_South_Korea.svg\/16px-Flag_of_South_Korea.svg.png&quot;,&quot;png32&quot;:&quot;https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/09\/Flag_of_South_Korea.svg\/32px-Flag_of_South_Korea.svg.png&quot;,&quot;isoCode&quot;:&quot;KO&quot;,&quot;isSelected&quot;:false}],&quot;translationPreferencesUrl&quot;:&quot;\/api\/2.0\/user\/setLanguagePreferences&quot;},&quot;userInfo&quot;:null}}">
    <style>
    
 * {
@@ -1565,7 +1565,7 @@ body {
                                  
                                         <shadow-wrapper>
       <div class="wp-embed">
-   <link rel="stylesheet" href="https://valkyrie.cdn.ifixit.com/assets/css/app.480c60.css">
+   <link rel="stylesheet" href="https://valkyrie.cdn.ifixit.com/assets/css/app.cba1ba.css">
 
 <style>
   @media  all and (-ms-high-contrast: none) {
@@ -1579,7 +1579,7 @@ body {
 
 
 <script id="wp-meta">
-  var wpMeta = {"title":"Smartphone Repairability Scores","description":"To find out, our engineers tear down the latest smartphones and score their repairability from zero (unrepairable) to ten (easiest to repair) so you can pick a&#8230;","canonical_url":"\/Page\/repairability\/smartphone-scores","lang":"en","comments":false,"breadcrumb":[{"id":75948,"slug":"repairability","title":"Repairability"}],"postId":79174,"slug":"smartphone-scores","postType":"page","image":"https:\/\/valkyrie.cdn.ifixit.com\/media\/2023\/09\/15130321\/Repairability-Index-LP_Featured-Image.jpg","datePublished":"2023-09-21T07:54:35-07:00","dateModified":"2023-09-21T07:54:35-07:00","author":"Johanna Woetzel","authorProfile":"https:\/\/www.ifixit.com\/User\/4085731","robots":{"indexing":"index","link_following":"follow","archiving":"archive"},"pagination":false,"is_single":false,"is_singular":true,"is_preview":false,"is_page":true,"is_archive":false,"is_category":false};
+  var wpMeta = {"title":"Smartphone Repairability Scores","description":"To find out, our engineers tear down the latest smartphones and score their repairability from zero (unrepairable) to ten (easiest to repair) so you can pick a&#8230;","canonical_url":"\/Page\/repairability\/smartphone-scores","lang":"en","comments":false,"breadcrumb":[{"id":75948,"slug":"repairability","title":"Repairability"}],"postId":79174,"slug":"smartphone-scores","postType":"page","image":"https:\/\/valkyrie.cdn.ifixit.com\/media\/2023\/09\/15130321\/Repairability-Index-LP_Featured-Image.jpg","datePublished":"2023-09-26T08:03:02-07:00","dateModified":"2023-09-26T08:03:02-07:00","author":"Johanna Woetzel","authorProfile":"https:\/\/www.ifixit.com\/User\/4085731","robots":{"indexing":"index","link_following":"follow","archiving":"archive"},"pagination":false,"is_single":false,"is_singular":true,"is_preview":false,"is_page":true,"is_archive":false,"is_category":false};
 </script>
 
 
@@ -1691,6 +1691,66 @@ body {
 
 
 
+<h1 class="has-text-align-center" style="font-size:clamp(30px, 30px, 10vmin)">Apple iPhone 14</h1>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns">
+<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:25%">
+<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://www.ifixit.com/Device/iPhone_14"><img loading="lazy" width="136" height="171" src="https://valkyrie.cdn.ifixit.com/media/2023/08/30230535/7-Apple-iPhone-14-1.png" alt="" class="wp-image-80532"/></a></figure></div>
+
+
+
+<p class="has-text-align-center has-normal-font-size">2022</p>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:50%">
+<h6 class="has-normal-font-size">PROS</h6>
+
+
+
+<ul class="has-normal-font-size"><li>Display and battery replacements remain a priority in the design.</li><li>Previously irreplaceable back glass is now immediately replaceable.</li></ul>
+
+
+
+<h6 class="has-normal-font-size">CONS</h6>
+
+
+
+<ul class="has-normal-font-size"><li>Extensive parts pairing results in painful compromises for many DIY repairs.</li></ul>
+</div>
+
+
+
+<div class="wp-block-column" style="flex-basis:25%">
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-full"><img loading="lazy" width="200" height="200" src="https://valkyrie.cdn.ifixit.com/media/2023/09/07085451/4_Repairability-Score_Index.png" alt="4 Repairability Score" class="wp-image-80958" srcset="https://valkyrie.cdn.ifixit.com/media/2023/09/07085451/4_Repairability-Score_Index.png 200w, https://valkyrie.cdn.ifixit.com/media/2023/09/07085451/4_Repairability-Score_Index-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></figure></div>
+
+
+
+<p class="has-text-align-center has-small-font-size"><a href="https://www.ifixit.com/Wiki/Repairability_Scoring_Rubric_v1.6" data-type="URL">Scorecard v1.6</a><br><strong><a href="https://www.ifixit.com/News/64865/iphone-14-teardown" data-type="URL" data-id="https://www.ifixit.com/News/64865/iphone-14-teardown">Learn More</a></strong></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns has-background" style="background-color:#eceded">
+<div class="wp-block-column">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
 <h1 class="has-text-align-center" style="font-size:clamp(30px, 30px, 10vmin)">Apple iPhone 14 Plus</h1>
 
 
@@ -1729,71 +1789,11 @@ body {
 
 
 <div class="wp-block-column" style="flex-basis:25%">
-<div class="wp-block-image is-style-default"><figure class="aligncenter size-full"><img loading="lazy" width="200" height="200" src="https://valkyrie.cdn.ifixit.com/media/2023/09/07085452/7_Repairability-Score_Index.png" alt="7 Repairability Score" class="wp-image-80961" srcset="https://valkyrie.cdn.ifixit.com/media/2023/09/07085452/7_Repairability-Score_Index.png 200w, https://valkyrie.cdn.ifixit.com/media/2023/09/07085452/7_Repairability-Score_Index-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></figure></div>
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><a href="https://www.ifixit.com/Wiki/Provisional_Repairability_Scores"><img src="https://valkyrie.cdn.ifixit.com/media/2023/09/07085614/7_Provisional_Repairability-Score_Index.png" alt="7 Repairability Score"/></a></figure></div>
 
 
 
 <p class="has-text-align-center has-small-font-size"><a href="https://www.ifixit.com/Wiki/Repairability_Scoring_Rubric_v1.4" data-type="URL" data-id="https://www.ifixit.com/Wiki/Repairability_Scoring_Rubric_v1.4">Scorecard v1.4</a><br><strong><a href="https://www.ifixit.com/News/66394/the-iphone-14-plus-is-more-repairable-too" data-type="URL" data-id="https://www.ifixit.com/News/66394/the-iphone-14-plus-is-more-repairable-too">Learn More</a></strong></p>
-</div>
-</div>
-</div>
-</div>
-
-
-
-<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<div class="wp-block-columns has-background" style="background-color:#eceded">
-<div class="wp-block-column">
-<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<h1 class="has-text-align-center" style="font-size:clamp(30px, 30px, 10vmin)">Apple iPhone 14</h1>
-
-
-
-<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
-
-
-
-<div class="wp-block-columns">
-<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:25%">
-<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://www.ifixit.com/Device/iPhone_14"><img loading="lazy" width="136" height="171" src="https://valkyrie.cdn.ifixit.com/media/2023/08/30230535/7-Apple-iPhone-14-1.png" alt="" class="wp-image-80532"/></a></figure></div>
-
-
-
-<p class="has-text-align-center has-normal-font-size">2022</p>
-</div>
-
-
-
-<div class="wp-block-column" style="flex-basis:50%">
-<h6 class="has-normal-font-size">PROS</h6>
-
-
-
-<ul class="has-normal-font-size"><li>Display and battery replacements remain a priority in the design.</li><li>Previously irreplaceable back glass is now immediately replaceable.</li></ul>
-
-
-
-<h6 class="has-normal-font-size">CONS</h6>
-
-
-
-<ul class="has-normal-font-size"><li>Proprietary screws and parts pairing can foil many repairs.</li></ul>
-</div>
-
-
-
-<div class="wp-block-column" style="flex-basis:25%">
-<div class="wp-block-image is-style-default"><figure class="aligncenter size-full"><img loading="lazy" width="200" height="200" src="https://valkyrie.cdn.ifixit.com/media/2023/09/07085452/7_Repairability-Score_Index.png" alt="7 Repairability Score" class="wp-image-80961" srcset="https://valkyrie.cdn.ifixit.com/media/2023/09/07085452/7_Repairability-Score_Index.png 200w, https://valkyrie.cdn.ifixit.com/media/2023/09/07085452/7_Repairability-Score_Index-150x150.png 150w" sizes="(max-width: 200px) 100vw, 200px" /></figure></div>
-
-
-
-<p class="has-text-align-center has-small-font-size"><a href="https://www.ifixit.com/Wiki/Repairability_Scoring_Rubric_v1.4" data-type="URL" data-id="https://www.ifixit.com/Wiki/Repairability_Scoring_Rubric_v1.4">Scorecard v1.4</a><br><strong><a href="https://www.ifixit.com/News/64865/iphone-14-teardown" data-type="URL" data-id="https://www.ifixit.com/News/64865/iphone-14-teardown">Learn More</a></strong></p>
 </div>
 </div>
 </div>
@@ -2269,7 +2269,7 @@ body {
 
 
 <div class="wp-block-column" style="flex-basis:25%">
-<div class="wp-block-image is-style-default"><figure class="aligncenter size-full"><a href="https://www.ifixit.com/Wiki/Provisional_Repairability_Scores"><img loading="lazy" width="200" height="216" src="https://valkyrie.cdn.ifixit.com/media/2023/09/07085614/6_Provisional_Repairability-Score_Index.png" alt="6 Provisional Repairability Score" class="wp-image-80971"/></a></figure></div>
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large"><img src="https://valkyrie.cdn.ifixit.com/media/2023/09/07085452/6_Repairability-Score_Index.png" alt="6 Provisional Repairability Score"/></figure></div>
 
 
 
@@ -3285,7 +3285,7 @@ body {
 
 
 
-<div class="wp-container-650bf6bac333a wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-container-651290366aa00 wp-block-group"><div class="wp-block-group__inner-container">
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
@@ -3347,7 +3347,7 @@ body {
 
 
 
-<div class="wp-container-650bf6bad078c wp-block-group"><div class="wp-block-group__inner-container">
+<div class="wp-container-651290367941d wp-block-group"><div class="wp-block-group__inner-container">
 <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
 
 
@@ -9615,12 +9615,12 @@ body {
 <script src="https://valkyrie.cdn.ifixit.com/assets/js/app.666ea5.js"></script>
 
 
-<script type="text/javascript">var algolia = {"debug":false,"application_id":"XQEP3AD9ZT","search_api_key":"ef47269d0070a9b156183a33021ab188","powered_by_enabled":false,"query":"","autocomplete":{"sources":[{"index_id":"searchable_posts","index_name":"wp_searchable_posts","label":"All posts","admin_name":"All posts","position":10,"max_suggestions":5,"tmpl_suggestions":"autocomplete-post-suggestion","enabled":true}],"input_selector":"input[name='s']:not('.no-autocomplete')"},"indices":{"searchable_posts":{"name":"wp_searchable_posts","id":"searchable_posts","enabled":true,"replicas":[]}}};</script><style>.wp-container-650bf6bac333a .alignleft { float: left; margin-right: 2em; }.wp-container-650bf6bac333a .alignright { float: right; margin-left: 2em; }</style>
-<style>.wp-container-650bf6bad078c .alignleft { float: left; margin-right: 2em; }.wp-container-650bf6bad078c .alignright { float: right; margin-left: 2em; }</style>
+<script type="text/javascript">var algolia = {"debug":false,"application_id":"XQEP3AD9ZT","search_api_key":"ef47269d0070a9b156183a33021ab188","powered_by_enabled":false,"query":"","autocomplete":{"sources":[{"index_id":"searchable_posts","index_name":"wp_searchable_posts","label":"All posts","admin_name":"All posts","position":10,"max_suggestions":5,"tmpl_suggestions":"autocomplete-post-suggestion","enabled":true}],"input_selector":"input[name='s']:not('.no-autocomplete')"},"indices":{"searchable_posts":{"name":"wp_searchable_posts","id":"searchable_posts","enabled":true,"replicas":[]}}};</script><style>.wp-container-651290366aa00 .alignleft { float: left; margin-right: 2em; }.wp-container-651290366aa00 .alignright { float: right; margin-left: 2em; }</style>
+<style>.wp-container-651290367941d .alignleft { float: left; margin-right: 2em; }.wp-container-651290367941d .alignright { float: right; margin-left: 2em; }</style>
 
 
 
-<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"NewsArticle","isAccessibleForFree":true,"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.ifixit.com\/repairability\/smartphone-scores"},"publisher":{"@type":"Organization","name":"iFixit","logo":{"@type":"ImageObject","url":"https:\/\/assets.cdn.ifixit.com\/static\/images\/home\/logos\/ifixit-logo-horiz.png"}},"headline":"Smartphone Repairability Scores","image":["https:\/\/valkyrie.cdn.ifixit.com\/media\/2023\/09\/15130321\/Repairability-Index-LP_Featured-Image.jpg"],"datePublished":"2023-09-21T07:54:35-07:00","dateModified":"2023-09-21T07:54:35-07:00","author":{"@type":"Person","name":"Johanna Woetzel","url":"Johanna Woetzel"},"description":"To find out, our engineers tear down the latest smartphones and score their repairability from zero (unrepairable) to ten (easiest to repair) so you can pick a\u2026"}</script></div>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"NewsArticle","isAccessibleForFree":true,"mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.ifixit.com\/repairability\/smartphone-scores"},"publisher":{"@type":"Organization","name":"iFixit","logo":{"@type":"ImageObject","url":"https:\/\/assets.cdn.ifixit.com\/static\/images\/home\/logos\/ifixit-logo-horiz.png"}},"headline":"Smartphone Repairability Scores","image":["https:\/\/valkyrie.cdn.ifixit.com\/media\/2023\/09\/15130321\/Repairability-Index-LP_Featured-Image.jpg"],"datePublished":"2023-09-26T08:03:02-07:00","dateModified":"2023-09-26T08:03:02-07:00","author":{"@type":"Person","name":"Johanna Woetzel","url":"Johanna Woetzel"},"description":"To find out, our engineers tear down the latest smartphones and score their repairability from zero (unrepairable) to ten (easiest to repair) so you can pick a\u2026"}</script></div>
 </shadow-wrapper>
                                                 </div>
                            </div>
@@ -9637,7 +9637,7 @@ body {
             <div class="react-component component-Footer"
       data-reactroot
    data-name="Footer"
-   data-props="{&quot;supportUrl&quot;:&quot;https:\/\/help.ifixit.com\/&quot;,&quot;repairUrl&quot;:&quot;https:\/\/repair.org\/&quot;,&quot;langViewID&quot;:&quot;en&quot;}">
+   data-props="{&quot;supportUrl&quot;:&quot;https:\/\/ifixit-eu-de.helpscoutdocs.com\/&quot;,&quot;repairUrl&quot;:&quot;https:\/\/repair.eu\/&quot;,&quot;langViewID&quot;:&quot;en&quot;}">
    
          <style>
             .footer-placeholder {
@@ -9654,7 +9654,7 @@ body {
          <img src="https://ping.ifixit.com/pp/tick.gif?key=ifixit%2Fwp_post%2F79174%2Fen" width="1" height="1" alt="" class="hidden" />
 
             <script type='text/javascript'>
-   var App = {"recaptchaToken":"6LdcrYcUAAAAADXZZ8mZBNd48Qpg6jF6_Zp2s1t5","canIBypassGAEventFiringOnMobile":false,"objectNameSingular":"Device","which":"ifixit","showAnnouncementBanner":true,"isLoggedIn":false,"algoliaConfig":{"appId":"XQEP3AD9ZT","apiKey":"ZDhjMzkzYTVjN2Y0ODNlZjRiYzkzNDc3ZmFkNDM1YmJlNDIyMzM1ODQ5ZGQ2MmZlZWY5ODlkNmQzOGY3YWQwM2ZpbHRlcnM9c2l0ZSUzQSUyMmlmaXhpdCUyMitBTkQrJTI4cHVibGljKyUzRCsxK09SK3ZhcmlhbnRzX2NvdW50KyUzRSUzRCsxJTI5JnZhbGlkVW50aWw9MTY5NTM3MDUwMA==","indexPrefix":"","langidsByObjectType":{"guide":["en"],"post":["en"],"product_group":["en"],"searchpage":["en"],"document":["en"],"wiki":["en"],"topic":["en"],"topic_variant":["en"],"item":["en"]},"filtersByObjectType":{"product":"is_pro != 1","guide":"NOT flags:\"GUIDE_ARCHIVED\""},"defaultDoctypes":["topic","product","product_group","guide","post","wiki","pages","news","document"]},"lang":"en","wpSlug":"smartphone-scores","affiliateConfig":{"amazon.com":"ifixitam-20","amzn.com":"ifixitam-20","oscaroparts.com":"http:\/\/www.anrdoezrs.net\/links\/8269773\/type\/dlg\/","ebay.com":"https:\/\/rover.ebay.com\/rover\/1\/711-53200-19255-0\/1?icep_id=114&ipn=icep&toolid=20004&campid=5338035637","newegg.com":"http:\/\/www.anrdoezrs.net\/links\/8269773\/type\/dlg\/","etradesupply.com":"65658fde58ab3c2b6e5132a39fae7cb9"},"postTitle":"Smartphone Repairability Scores","postid":79174,"showTranslatedPlaceholder":false,"canIForceSentryReporting":false,"SENTRY_DSN_JS":"https:\/\/5552835e822c4c8db5070306b2535ef3@o186239.ingest.sentry.io\/1281569","sentryTags":{"site":"ifixit","lang":"en","isAdmin":false,"deployment":"production"},"sentryPerformance":true,"sentryRelease":"4f4b023c056848d9d595bb7c2a02882fe5322787\n","googleOAuth2Clientid":"622418919965-qcvbv04spukbdo9ut8pevt4pucmkp86o.apps.googleusercontent.com","googleOAuth2Domain":"","usernamePattern":"^[a-z][a-z0-9_]{2,14}$","maxMediaSize":100,"maxMediaLength":30,"videosEnabled":true,"strokeWidthMedium":5,"iconTimes":"<i  class=\"svg-icon\"   style=\"display: inline-block; width: 16px; height: 16px;\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"\/>\n    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"\/>\n<\/svg><\/i>","videoEncodings":{"MP4_720":{"column":"MP4_720","label":"480p","encoding":"mp4","width":720,"height":480,"codecs":"avc1.4D401E, mp4a.40.2","ffmpeg_args":"-vcodec libx264 -profile:v main -level 3.1 -crf 23 -acodec aac -vf format=yuv420p","mime":"video\/mp4","always_generate":true}},"FrameModules":["LoginFrameModule","ImageMenuFrameModule","MediaLibraryFrameModule","NotifyFrameModule","WatchFrameModule","NewsletterFrameModule","PageStatsFrameModule","ImageMarkersFrameModule","ImageCropFrameModule"],"isProduction":true,"locale":"en_US","siteName":"ifixit","useSecureCookies":true,"sameSiteValue":"None","imageSizeWidths":{"mini":56,"thumbnail":96,"140x105":140,"200x150":200,"standard":300,"440x330":440,"medium":592,"large":800,"huge":1600},"shopifyCheckout":{"clientDetails":{"domain":"store.ifixit.com","storefrontAccessToken":"db3099692534a56ecec7b974a329d302","apiVersion":"2023-07"},"ssoRoute":"https:\/\/www.ifixit.com\/User\/sso\/shopify\/ifixit-us?checkout=1","useDraftOrder":false},"facebookAppId":"401112919922369"};
+   var App = {"recaptchaToken":"6LdcrYcUAAAAADXZZ8mZBNd48Qpg6jF6_Zp2s1t5","canIBypassGAEventFiringOnMobile":false,"objectNameSingular":"Device","which":"ifixit","showAnnouncementBanner":true,"isLoggedIn":false,"algoliaConfig":{"appId":"XQEP3AD9ZT","apiKey":"YjIyODQ5MTYyNGY1Mjc0ZTMxODQ1NDdkODQ5NjlkZjE2N2EzNDNkN2E5MDhjMzkxZWIyNDY2MTljY2FjZjU2N2ZpbHRlcnM9JTI4c2l0ZSUzQSUyMmlmaXhpdCUyMitPUitpbnZlbnRvcnlfbWFuYWdlbWVudCUzQSUyMnNob3BpZnklMjIlMjkrQU5EKyUyOHB1YmxpYyslM0QrMStPUit2YXJpYW50c19jb3VudCslM0UlM0QrMSUyOSZ2YWxpZFVudGlsPTE2OTU4MDI0OTg=","indexPrefix":"","langidsByObjectType":{"guide":["en"],"post":["en"],"product_group":["en"],"searchpage":["en"],"document":["en"],"wiki":["en"],"topic":["en"],"topic_variant":["en"],"item":["en"]},"filtersByObjectType":{"product":"is_pro != 1","guide":"NOT flags:\"GUIDE_ARCHIVED\""},"defaultDoctypes":["topic","product","product_group","guide","post","wiki","pages","news","document"]},"lang":"en","wpSlug":"smartphone-scores","affiliateConfig":{"amazon.com":"ifixitam-20","amzn.com":"ifixitam-20","oscaroparts.com":"http:\/\/www.anrdoezrs.net\/links\/8269773\/type\/dlg\/","ebay.com":"https:\/\/rover.ebay.com\/rover\/1\/711-53200-19255-0\/1?icep_id=114&ipn=icep&toolid=20004&campid=5338035637","newegg.com":"http:\/\/www.anrdoezrs.net\/links\/8269773\/type\/dlg\/","etradesupply.com":"65658fde58ab3c2b6e5132a39fae7cb9"},"postTitle":"Smartphone Repairability Scores","postid":79174,"showTranslatedPlaceholder":false,"canIForceSentryReporting":false,"SENTRY_DSN_JS":"https:\/\/5552835e822c4c8db5070306b2535ef3@o186239.ingest.sentry.io\/1281569","sentryTags":{"site":"ifixit","lang":"en","isAdmin":false,"deployment":"production"},"sentryPerformance":true,"sentryRelease":"2da41bfa2fac1674569ba6b26929637ee56481c4\n","googleOAuth2Clientid":"622418919965-qcvbv04spukbdo9ut8pevt4pucmkp86o.apps.googleusercontent.com","googleOAuth2Domain":"","usernamePattern":"^[a-z][a-z0-9_]{2,14}$","maxMediaSize":100,"maxMediaLength":30,"videosEnabled":true,"strokeWidthMedium":5,"iconTimes":"<i  class=\"svg-icon\"   style=\"display: inline-block; width: 16px; height: 16px;\"><svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n    <line x1=\"18\" y1=\"6\" x2=\"6\" y2=\"18\"\/>\n    <line x1=\"6\" y1=\"6\" x2=\"18\" y2=\"18\"\/>\n<\/svg><\/i>","videoEncodings":{"MP4_720":{"column":"MP4_720","label":"480p","encoding":"mp4","width":720,"height":480,"codecs":"avc1.4D401E, mp4a.40.2","ffmpeg_args":"-vcodec libx264 -profile:v main -level 3.1 -crf 23 -acodec aac -vf format=yuv420p","mime":"video\/mp4","always_generate":true}},"FrameModules":["LoginFrameModule","ImageMenuFrameModule","MediaLibraryFrameModule","NotifyFrameModule","WatchFrameModule","NewsletterFrameModule","PageStatsFrameModule","ImageMarkersFrameModule","ImageCropFrameModule"],"isProduction":true,"locale":"en_US","siteName":"ifixit","useSecureCookies":true,"sameSiteValue":"None","imageSizeWidths":{"mini":56,"thumbnail":96,"140x105":140,"200x150":200,"standard":300,"440x330":440,"medium":592,"large":800,"huge":1600},"shopifyCheckout":{"clientDetails":{"domain":"store.ifixit.com","storefrontAccessToken":"db3099692534a56ecec7b974a329d302","apiVersion":"2023-07"},"ssoRoute":"https:\/\/www.ifixit.com\/User\/sso\/shopify\/ifixit-us?checkout=1","useDraftOrder":false},"facebookAppId":"401112919922369"};
 </script>
    </body>
 </html>
