@@ -1,6 +1,6 @@
 [
 {"cycle":"17","releaseDate":"2023-09-18","support":true,"eol":false,"latestReleaseDate":"2023-10-04","latest":"17.0.3","link":"https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-17-release-notes","lts":false},
-{"cycle":"16","releaseDate":"2022-09-12","support":"2023-09-18","eol":false,"latestReleaseDate":"2023-09-21","latest":"16.7","link":"https://support.apple.com/HT213407","lts":false},
+{"cycle":"16","releaseDate":"2022-09-12","support":"2023-09-18","eol":false,"latestReleaseDate":"2023-10-10","latest":"16.7.1","link":"https://support.apple.com/HT213407","lts":false},
 {"cycle":"15","releaseDate":"2021-09-20","support":"2022-09-12","eol":false,"latestReleaseDate":"2023-09-11","latest":"15.7.9","link":"https://support.apple.com/HT212788","lts":false},
 {"cycle":"14","releaseDate":"2020-09-16","support":"2021-09-20","eol":"2021-10-01","latestReleaseDate":"2021-10-26","latest":"14.8.1","link":"https://support.apple.com/HT211808","lts":false},
 {"cycle":"13","releaseDate":"2019-09-19","support":"2020-09-16","eol":"2020-09-16","latestReleaseDate":"2020-09-01","latest":"13.7","link":"https://support.apple.com/HT210393","lts":false},
