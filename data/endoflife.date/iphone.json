@@ -1,4 +1,5 @@
 [
+{"cycle":"16e","releaseLabel":"16e","releaseDate":"2025-02-28","discontinued":false,"eol":false,"link":"https://support.apple.com/en-us/docs/iphone/301076","supportedIosVersions":18,"lts":false},
 {"cycle":"16","releaseLabel":"16","releaseDate":"2024-09-20","discontinued":false,"eol":false,"link":"https://support.apple.com/en-us/121029","supportedIosVersions":18,"lts":false},
 {"cycle":"16-plus","releaseLabel":"16 Plus","releaseDate":"2024-09-20","discontinued":false,"eol":false,"link":"https://support.apple.com/en-us/121030","supportedIosVersions":18,"lts":false},
 {"cycle":"16-pro","releaseLabel":"16 Pro","releaseDate":"2024-09-20","discontinued":false,"eol":false,"link":"https://support.apple.com/en-us/121031","supportedIosVersions":18,"lts":false},
