@@ -1,4 +1,5 @@
 [
+{"name":"MacBook Air 13″ (M4)","link":"https://www.ifixit.com/News/108697/m4-macbook-air-teardown-apple-when-will-macbooks-finally-get-repair-upgrades"},
 {"name":"Lenovo ThinkPad E16 Gen 2"},
 {"name":"Lenovo ThinkPad E14 Gen 6"},
 {"name":"Microsoft Surface Laptop 7"},
@@ -6,5 +7,8 @@
 {"name":"Lenovo ThinkPad T16 Gen 3"},
 {"name":"Lenovo ThinkPad T14 Gen 5","link":"https://www.ifixit.com/Document/sunTY6dbbJvOMRjP/Repairability-Snapshot-%E2%80%93-Lenovo-ThinkPad-T14-Gen-5.pdf"},
 {"name":"Framework Laptop 16","link":"https://www.ifixit.com/Document/ZdWVvQ2AHp5MDYgO/Repairability-Snapshot---Framework-Laptop-16.pdf"},
-{"name":"Lenovo ThinkPad T14 Gen 3","score":"7"}
+{"name":"MacBook Air 15″ (M2)","link":"https://www.ifixit.com/News/62674/m2-macbook-air-teardown-apple-forgot-the-heatsink"},
+{"name":"MacBook Air 13″ (M2)","link":"https://www.ifixit.com/News/62674/m2-macbook-air-teardown-apple-forgot-the-heatsink"},
+{"name":"Lenovo ThinkPad T14 Gen 3","score":"7"},
+{"name":"MacBook Pro 14″ (M1)","link":"https://www.ifixit.com/News/54122/macbook-pro-2021-teardown"}
 ]
